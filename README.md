@@ -1,24 +1,19 @@
-VRodos
+XRodos
 
-A plugin for WordPress to transform your website into a multipurpose 3D media management tool
-
-- 3D assets repository
-- 3D assets visualizer for WordPress pages, e.g. commercial pages with 3D content
-- Database and API point of 3D media for your mobile applications
-- Digital Signage management tool capable for visualizing 3D media
-- VR applications authoring tool with a 3D scene editor
+A plugin for WordPress to transform your website into an authoring tool for 3D digital worlds with XR capabilities
 
 Features
 
-- Formats support:  GLB.
-- Support sound
+- 3D Format support: GLB (To be expanded).
+- Supports sound
 
 Interface Pages
 
-- Asset List
+
 - Project Manager
-- Scene 3D Editor
+- Asset List
 - Asset Editor
+- Scene 3D Editor
 
 
 ### Do you have a demo?
@@ -41,14 +36,14 @@ Interface Pages
 **Instructions for installation in WordPress**
 
 - Download as zip
-- Rename VRodos-master.zip to VRodos.zip
-- Also rename the folder VRodos-master inside the zip file to VRodos.
+- Rename XRodos-master.zip to XRodos.zip
+- Also rename the folder XRodos-master inside the zip file to XRodos.
 
-- Install VRodos.zip from WordPress dashboard with "ADD from file" button in install new plugins.
+- Install XRodos.zip from WordPress dashboard with "ADD from file" button in install new plugins.
 
-- Download mdc and other node modules
+- Load modules through NPM
 
-  -- In root folder `VRodos` run `npm install`.
+  -- In root folder `XRodos` run `npm install`.
 
 - Set permalinks to Day / Name (2nd option)
 - Add to menu
@@ -61,7 +56,7 @@ Interface Pages
 
 Two types of servers are needed:
 
-- Apache server, e.g. on windows locally using Xampp / Wamp etc.
+- Apache server
     - Server is used for the content of the scenes.
     - Server contains also mysql server which is needed for WordPress to work (and somewhere to save the data).
 - Node.js server for Networked-Aframe. To start Node.js server
@@ -70,7 +65,7 @@ Two types of servers are needed:
 
         - Force is needed because some packages are obsolete
 
-    2) A WebRTC TURN server is used for the collaborative functionality of VROdos. Create a free account for OpenRelay, and save server keys in a json file. 
+    2) A WebRTC TURN server is used for the collaborative functionality of XROdos. Create a free account for OpenRelay, and save server keys in a json file. 
         - Go to: https://dashboard.metered.ca/signup?tool=turnserver
         - Create a free account.
         - On your dashboard create an App.
